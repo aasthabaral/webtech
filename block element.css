@@ -1,0 +1,22 @@
+div, p{
+    background-color: aqua;
+}
+h1{
+    background-color: violet;
+}
+table,nav{
+    background-color: pink;
+}
+a{
+    text-decoration: none;
+    font-size: large;
+}
+#mychrome{
+    background-color: red;
+}
+form{
+    background-color: green;
+}
+a:hover{
+    background-color: green;
+}

@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(213, 230, 236);
+}
+span{
+    background-color: red;
+}
+strong,var{
+    background-color: aqua;
+}
+button,{
+    color: purple;
+}
+button:hover{
+    background-color: red;
+}
+#mytime{
+    background-color: aqua;
+}
+code{
+    background-color: red;
+}
