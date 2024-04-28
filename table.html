@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        th{
+            background-color:aqua;
+            color: white;
+        }
+        tr:hover{
+            background-color: plum;
+        }
+        tr:nth-child(odd) {
+            background-color: purple;
+        }
+        tr:nth-child(even) {
+            background-color:white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Here is how to create a Zebra Srtiped Table!!</h3>
+    <!-- Colspan is used to expand any column into desired number, 2 in case of column "name" below! -->
+    <!-- "border" is used to create border around table created! -->
+    <table border="1" cellspacing="5px" cellpadding="5px">  
+        <caption>Student Table</caption>
+        <tr>
+            <th>ID</th>
+            <th colspan="2">Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Aastha</td>
+            <td>Baral</td>
+            <td>Lagankhel</td>
+            <td>0100001001</td>   
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Sabina</td>
+            <td>Basnet</td>
+            <td>Jwalakhek</td>
+            <td>101011101</td>
+        </tr>
+        <tr>
+            <td>1003</td>
+            <td>Prasikshya</td>
+            <td>Baral</td>
+            <td>Kupandol</td>
+            <td>1010110111</td> 
+        </tr>
+        <tr>
+            <td>1004</td>
+            <td>Asmita</td>
+            <td>Pandey</td>
+            <td>gwarko</td>
+            <td>001011101</td>
+        </tr>
+
+    </table>
+</body>
+</html>
