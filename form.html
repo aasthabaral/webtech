@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration forms</title>
+    <style>
+        body{
+         background-color: rgb(163 237 207); 
+         
+        }
+        .form_element{
+            background-color:rgb(128 225 195);
+            margin-bottom: 4px;
+            color: white;
+            padding: 3px;
+        }
+        form{
+            border: 3px solid black;
+            width: 363px;
+        }
+        #submit_btn{
+            background-color: #a3155c;
+            color: beige;
+            padding: 3px;
+            float: right;
+            border-radius: 15px;
+            margin-right: 178px;
+
+        }
+          label{
+            color: black;
+        }
+        /* Here is how to align the boxes at one side !!   */
+        #fname,#lname,#email,#password,#zone{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="">
+    <div class="form_element">
+            <label for="">First Name:</label>
+            <input type="text" name="first_name" id="fname">
+    </div>
+    <div class="form_element">
+
+        <label for="">Last Name:</label>
+        <input type="text" name="last_name" id="lname">
+    </div>
+    <div class="form_element">
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="form_element">
+        <label for="">Password:</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div class="form_element">
+        <label for="">Zone:</label>
+        <select name="" id="zone">
+             
+            <option value="bagmati" >Bagmati Pradesh</option>
+            <option value="gandaki" >Gandaki Pradesh</option>
+        </select>
+    </div>
+    <div class="form_element">
+        <!-- to make only one clickable give same name! -->
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" value="male" id="m">Male
+        <input type="radio" name="gender" value="female" id="f">Female
+    </div>
+    <div class="form_element">
+        <label for="">Education:</label>
+        <input type="checkbox" name="11" value="SEE">SEE
+        <input type="checkbox" name="12" value="Plus2">+2
+        <input type="checkbox" name="13" value="Bachelors">Bachelors
+        <input type="checkbox" name="14" value="Masters">Masters
+    </div>
+    <div class="form_element">
+        <input type="submit" value="Register" name="submit_btn" id="submit_btn">
+    </div>
+  </form>  
+</body>
+</html>
