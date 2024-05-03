@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        body{
+            background-color: rgb(210, 210, 243);
+        }
+        .sibling_element{
+            position: sticky;
+            /* positioned based on the user's scroll position. */
+            background:#c4b3ed;
+            padding: 10px;
+        }
+        .main_element{
+            /*  position: relative; */
+            /* relative:positioned relative to its normal position */
+            position:fixed;
+            /* always stays in the same place. */
+            left: 480px;
+            bottom: 250px;
+            background-color: yellow;
+            padding: 10px;
+        }
+        #click{
+            position: sticky;
+            background-color:#c11e3b;
+            color: beige;
+            padding: 5px;
+             float: right; 
+            border-radius: 15px;
+            margin-right: 695px;
+            
+
+        }
+        #click:hover{
+            background-color: rgb(238, 106, 18);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="sibling_element">
+            I am the  first sibling element.
+        </div>
+        <div class="main_element">
+           All eyes on me.I am the main element.
+       </div>
+        <div class="sibling_element">
+            I am the other sibling element.
+        </div>
+        <div >
+            <input type="submit" value="Click here!" name="Click me" id="click">
+        </div>
+    </div> 
+</body>
+</html>
