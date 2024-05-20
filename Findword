@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Find Word</h2>
+
+<label for="searchWord">Type a word...</label><br>
+<input type="text" id="searchWord" name="searchWord">
+<button onclick="findWord()">Find</button>
+
+<p id="content">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Omnis libero a eveniet alias eaque vel, illo repudiandae recusandae nam perferendis?
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+  Qui iusto dignissimos sint pariatur. Exercitationem quia architecto fuga quis ad vitae provident necessitatibus!
+   Voluptate rem cum, nisi provident iusto quibusdam optio natus magnam debitis nobis ex numquam. 
+   Eos fuga quod, iure nulla, beatae, quo aperiam tenetur numquam eligendi ex nisi repellendus.
+</p>
+
+<script>
+function findWord() {
+  var searchTerm = document.getElementById('searchWord').value;
+  var content = document.getElementById('content').innerHTML;
+  var highlightedContent = content.replace(new RegExp(searchTerm, 'gi'), '<span class="highlight">$&</span>'); 
+//   this line to repalce the found word and highlihght ..searchterm is variable mentioned above and g is for global ness
+// i for case sensetive A=a garna and span $& for highligting 
+  document.getElementById('content').innerHTML = highlightedContent;
+}
+
+
+</script>
+
+
+</body>
+</html>
